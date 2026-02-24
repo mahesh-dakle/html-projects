@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+
+    <style>
+        select {
+            width: 180px;
+            font-size: medium;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Registration form</h1>
+    <br>
+
+    <form>
+        <label for="name">NAME:</label>
+        <input type="text" id="name" placeholder="type your name" minlength="1" maxlength="20" required>
+        <br><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" placeholder="type your email" required>
+        <br><br>
+
+        <label for="phone no">TELEPHONE NO:</label>
+        <input type="tel" id="phone no" placeholder="type your telephone no" maxlength="10" required>
+        <br><br>
+
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB" required>
+        <br><br>
+
+
+        <label for="gender">GENDER:</label>
+        <input type="radio" name="gender">male <!--name should be same -->
+        <input type="radio" name="gender">female
+        <input type="radio" name="gender">other
+        <br><br>
+
+        <select name="country" required>
+            <option disabled selected>select the country</option>
+            <option>india</option>
+            <option>russia</option>
+            <option>south africa</option>
+            <option>australia</option>
+            <option>germany</option>
+            <option>china</option>
+            <option>usa</option>
+            <option>england</option>
+            <option>janpan</option>
+        </select>
+        <br><br>
+
+        <select name="state" required>
+            <option disabled select>select the state</option>
+            <option>maharashtra</option>
+            <option>bihar</option>
+            <option>goa</option>
+            <option>gujarat</option>
+            <option>kerala</option>
+            <option>madhya pradesh</option>
+            <option>haryana</option>
+            <option>assam</option>
+            <option>jharkhand</option>
+        </select>
+        <br><br>
+
+        <select name="city" required>
+            <option disabled selected>select the city</option>
+            <option>mumbai</option>
+            <option>pune</option>
+            <option>sambaji nagar</option>
+            <option>jalna</option>
+            <option>latur</option>
+            <option>raigad</option>
+            <option>nanded</option>
+            <option>nagpur</option>
+            <option>nashik</option>
+        </select>
+        <br><br>
+
+        <label for="pin code">PIN CODE:</label>
+        <input type="number" id="pin code" placeholder="add your pincode">
+        <br><br>
+
+
+        <label for="address">ADDRESS:</label>
+        <input type="text" id="address" minlength="10" maxlength="100" required placeholder="type your address">
+        <br><br>
+
+
+        <label for="profile picture">ADD PROFILE PICTURE:</picture></label>
+        <input type="file" placeholder="add profile picture">
+        <br><br>
+
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" minlength="1" maxlength="6" required>
+        <br><br>
+
+        <label for="conform password">CONFORM PASSWORD:</label>
+        <input type="password" id="conform password" minlength="1" maxlength="6" required>
+        <br><br>
+
+        <label for="agree terms and conditions">agree to terms and conndition</label>
+        <input type="checkbox" id="agree terms and conditions" required>
+        <br><br>
+
+
+        <label for="submit"></label>
+        <input type="submit" id="submit">
+        <br><br>
+
+
+        <label for="reset"></label>
+        <input type="reset" id="reset">
+
+
+
+    </form>
+</body>
+
+</html>
